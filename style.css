@@ -162,16 +162,6 @@ body {
   padding: 0 2.4rem;
 }
 
-.footer-container {
-  padding: 2.4rem;
-  margin-bottom: 2.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  justify-content: center;
-  align-items: center;
-}
-
 .position-container {
   position: relative;
 }
@@ -197,4 +187,32 @@ body {
   position: absolute;
   top: 5%;
   left: -10%;
+}
+
+.footer-container {
+  /* position: fixed; */
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 3.2rem 3.2rem;
+
+  width: 100vw;
+  border: 5px solid #087f5b;
+}
+
+.footer-container {
+  padding: 2.4rem;
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-fixed {
+  position: fixed;
+
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
