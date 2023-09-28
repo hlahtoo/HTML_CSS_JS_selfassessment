@@ -20,6 +20,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  width: 100vw;
+  /* margin: 0 auto; */
 }
 .header-nav-list {
   list-style: none;
@@ -43,10 +46,13 @@ body {
   color: #099268;
 }
 
-.hero-section,
-.useful-tag-section {
+.hero-section {
   background-color: #c3fae8;
   padding: 4.8rem 0 9.6rem 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-container {
@@ -65,4 +71,130 @@ body {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
+}
+
+.useful-tag-section,
+.grid-wo-css-section,
+.size-section {
+  background-color: #c3fae8;
+  padding: 4.8rem 0 0;
+}
+
+.tags-container,
+.seo-container,
+.grid-wo-container,
+.gallery-box-container,
+.size-container,
+.footer-container,
+.position-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 3.2rem 3.2rem;
+}
+
+.heading-2 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.useful-tags,
+.seo-tips {
+  padding: 0 2.4rem;
+  font-size: 1.6rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.grid-wo-container span {
+  font-size: 2rem;
+}
+
+.grid-wo-container {
+  text-align: center; /* Center the content horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically and horizontally */
+  align-items: center;
+
+  /* height: 10÷0vh; Make sure the container takes the full viewport height */
+}
+
+.heading-2 {
+  align-self: flex-start;
+}
+
+.grid-layout span {
+  padding: 4rem;
+}
+.grid-layout div {
+  margin-bottom: 2rem;
+}
+
+.box {
+  font-size: 1.6rem;
+  width: 450px;
+  height: 300px;
+}
+
+.box-1 {
+  border: 5px solid #087f5b;
+  padding: 40px;
+  margin: 40px;
+}
+
+.box-2 {
+  border: 10px solid #087f5b;
+  padding: 80px;
+  margin: 20px;
+}
+
+.box-3 {
+  border: 3px solid #087f5b;
+  padding: 60px;
+  margin: 80px;
+}
+
+.size-container ul {
+  padding: 0 2.4rem;
+}
+
+.footer-container {
+  padding: 2.4rem;
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-container {
+  position: relative;
+}
+
+.position {
+  border: 5px solid #087f5b;
+  padding: 20px;
+  margin: 40px;
+  font-size: 1.6rem;
+}
+
+.pos-1 {
+  position: static;
+}
+
+.pos-2 {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.pos-3 {
+  position: absolute;
+  top: 5%;
+  left: -10%;
 }
